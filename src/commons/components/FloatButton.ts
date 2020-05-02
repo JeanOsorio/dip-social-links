@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 const FloatButton = styled.button`
   position: fixed;
-  width: 30px;
-  height: 30px;
+  width: 45px;
+  height: 45px;
   bottom: 40px;
   right: 40px;
   background-color: #fff;
