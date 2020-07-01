@@ -8,6 +8,7 @@ interface IconButtonProps {
 const IconButton = styled.img<IconButtonProps>`
   width: 1.125em;
   font-size: 1.4em;
+  pointer-events: none;
 `;
 
 export default IconButton;

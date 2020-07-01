@@ -46,7 +46,9 @@ function App() {
   };
 
   const handleClick = (e) => {
-    const element = e.target.dataset.name || e.target.name;
+    console.log(e.target);
+    const element = e.target.dataset.name;
+    // const element = e.target.dataset.name || e.target.name;
     ReactGA.event({
       category: 'Social',
       action: element,
@@ -81,55 +83,51 @@ function App() {
             light={elements.isLight}
             onClick={handleClick}
             name="youtube"
+            data-name="youtube"
           >
             <IconButton
               src={elements.isLight ? youtubeIcon : youtubeBlackIcon}
               light={elements.isLight}
-              data-name="youtube"
             />
           </SocialButton>
           <SocialButton
             light={elements.isLight}
             onClick={handleClick}
-            name="instagram"
+            data-name="instagram"
           >
             <IconButton
               src={elements.isLight ? instagramIcon : instagramBlackIcon}
               light={elements.isLight}
-              data-name="instagram"
             />
           </SocialButton>
           <SocialButton
             light={elements.isLight}
             onClick={handleClick}
-            name="facebook"
+            data-name="facebook"
           >
             <IconButton
               src={elements.isLight ? facebookIcon : facebookBlackIcon}
               light={elements.isLight}
-              data-name="facebook"
             />
           </SocialButton>
           <SocialButton
             light={elements.isLight}
             onClick={handleClick}
-            name="github"
+            data-name="github"
           >
             <IconButton
               src={elements.isLight ? githubIcon : githubBlackIcon}
               light={elements.isLight}
-              data-name="github"
             />
           </SocialButton>
           <SocialButton
             light={elements.isLight}
             onClick={handleClick}
-            name="blog"
+            data-name="blog"
           >
             <IconButton
               src={elements.isLight ? blogIcon : blogBlackIcon}
               light={elements.isLight}
-              data-name="blog"
             />
           </SocialButton>
         </SocialContainer>
