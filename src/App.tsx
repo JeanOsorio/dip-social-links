@@ -46,9 +46,7 @@ function App() {
   };
 
   const handleClick = (e) => {
-    console.log(e.target);
     const element = e.target.dataset.name;
-    // const element = e.target.dataset.name || e.target.name;
     ReactGA.event({
       category: 'Social',
       action: element,

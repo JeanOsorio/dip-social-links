@@ -23,6 +23,7 @@ const SocialButton = styled.button<SocialButtonProps>`
   text-align: center;
   justify-content: center;
   touch-action: none;
+  align-items: center;
 
   @media (min-width: 320px) and (max-width: 480px) {
     width: 60px;
